@@ -1,0 +1,20 @@
+{
+  "name": "clippy-for-chatgpt",
+  "interface": {
+    "displayName": "Clippy Pet Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "clippy-for-chatgpt",
+      "source": {
+        "source": "local",
+        "path": "./plugins/clippy-for-chatgpt"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

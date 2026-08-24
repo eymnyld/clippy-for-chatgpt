@@ -1,0 +1,28 @@
+{
+  "name": "clippy-for-chatgpt",
+  "version": "1.0.0",
+  "description": "Install a validated animated Clippy pet in the Codex desktop app.",
+  "author": {
+    "name": "eymndev",
+    "url": "https://github.com/eymndev"
+  },
+  "homepage": "https://github.com/eymndev/clippy-for-chatgpt",
+  "repository": "https://github.com/eymndev/clippy-for-chatgpt",
+  "license": "MIT",
+  "keywords": ["clippy", "codex", "chatgpt", "pet", "spritesheet"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clippy for Codex",
+    "shortDescription": "Install the bundled animated Clippy pet.",
+    "longDescription": "Adds a local-only guided installer for a validated Codex v2 Clippy pet with nine standard animation states and sixteen look directions.",
+    "developerName": "eymndev",
+    "category": "Productivity",
+    "capabilities": ["Local files"],
+    "websiteURL": "https://github.com/eymndev/clippy-for-chatgpt",
+    "defaultPrompt": [
+      "Install the bundled Clippy pet into Codex and verify it.",
+      "Check whether the bundled Clippy pet is installed correctly."
+    ],
+    "brandColor": "#8B87B7"
+  }
+}

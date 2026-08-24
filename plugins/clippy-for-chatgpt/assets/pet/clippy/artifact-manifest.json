@@ -1,0 +1,19 @@
+{
+  "id": "clippy",
+  "format": "webp",
+  "width": 1536,
+  "height": 2288,
+  "columns": 8,
+  "rows": 11,
+  "cellWidth": 192,
+  "cellHeight": 208,
+  "spriteVersionNumber": 2,
+  "files": {
+    "spritesheet.webp": {
+      "sha256": "96b04a0a1a82060e663a3b17c914630d47f66b6f80dad425a6c0f5c67c642ea5"
+    },
+    "pet.json": {
+      "sha256": "e18f38295dba206ba9cb69afdd462d472c8e0787ad38dc302bf02c2371c4b88a"
+    }
+  }
+}

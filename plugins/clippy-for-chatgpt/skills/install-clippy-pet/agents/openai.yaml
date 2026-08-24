@@ -1,0 +1,4 @@
+interface:
+  display_name: "Install Clippy Pet"
+  short_description: "Install the bundled Clippy pet in Codex"
+  default_prompt: "Use $install-clippy-pet to install the bundled Clippy pet into Codex and verify it."
