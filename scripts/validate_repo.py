@@ -94,6 +94,14 @@ def main() -> None:
             require(filename in prompt, f"prompt does not name {filename}: {path.name}")
             require(metadata["sha256"] in prompt, f"prompt does not include {filename} SHA-256: {path.name}")
 
+    label = ROOT / "docs" / "assets" / "ai-generated-label-black.svg"
+    require(label.is_file(), "missing AI-generated label SVG")
+    label_text = label.read_text(encoding="utf-8")
+    require("<svg" in label_text, "AI-generated label is not an SVG")
+    require("<script" not in label_text.lower(), "AI-generated label must not contain scripts")
+    for readme in (ROOT / "README.md", ROOT / "README.tr.md"):
+        require("docs/assets/ai-generated-label-black.svg" in readme.read_text(encoding="utf-8"), f"README does not show AI-generated label: {readme.name}")
+
     print("OK: plugin, marketplace, pet dimensions, SHA-256 hashes, and standalone prompts are valid")
 
 

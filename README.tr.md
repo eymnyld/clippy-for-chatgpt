@@ -2,6 +2,10 @@
 
 [English README](README.md)
 
+<p align="left">
+  <img src="docs/assets/ai-generated-label-black.svg" alt="Yapay zekâ ile üretildi" width="240">
+</p>
+
 Codex masaüstü uygulaması için hazırlanmış, resmî olmayan ve hayran yapımı animasyonlu Clippy pet paketidir. Codex marketplace plugin’i, prompt ile çalışan kurulum becerisi, macOS/Linux ve Windows kurucuları ve doğrulanmış v2 pet dosyalarını içerir.
 
 > Bu paket **Codex masaüstü peti** kurar. Normal ChatGPT web arayüzüne Clippy eklemez.

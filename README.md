@@ -2,6 +2,10 @@
 
 [Türkçe README](README.tr.md)
 
+<p align="left">
+  <img src="docs/assets/ai-generated-label-black.svg" alt="AI generated" width="240">
+</p>
+
 An unofficial, fan-made animated Clippy pet package for the Codex desktop app. It includes a Codex marketplace plugin, a prompt-driven installer skill, direct macOS/Linux and Windows installers, and the validated v2 pet assets.
 
 > This installs a **Codex desktop pet**. It does not add Clippy to the regular ChatGPT web interface.
