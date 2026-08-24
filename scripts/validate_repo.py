@@ -80,12 +80,21 @@ def main() -> None:
         ROOT / "README.md",
         ROOT / "README.tr.md",
         ROOT / "PROMPTS.md",
+        ROOT / "INSTALL-PROMPT-EN.txt",
+        ROOT / "INSTALL-PROMPT-TR.txt",
         PLUGIN / "skills" / "install-clippy-pet" / "SKILL.md",
     ):
         require(path.is_file(), f"missing required file: {path.relative_to(ROOT)}")
         require("[TODO:" not in path.read_text(encoding="utf-8"), f"unfinished placeholder: {path.relative_to(ROOT)}")
 
-    print("OK: plugin, marketplace, pet dimensions, and SHA-256 hashes are valid")
+    for path in (ROOT / "INSTALL-PROMPT-EN.txt", ROOT / "INSTALL-PROMPT-TR.txt"):
+        prompt = path.read_text(encoding="utf-8")
+        require("/v1.0.1/" in prompt, f"prompt is not pinned to v1.0.1: {path.name}")
+        for filename, metadata in artifact["files"].items():
+            require(filename in prompt, f"prompt does not name {filename}: {path.name}")
+            require(metadata["sha256"] in prompt, f"prompt does not include {filename} SHA-256: {path.name}")
+
+    print("OK: plugin, marketplace, pet dimensions, SHA-256 hashes, and standalone prompts are valid")
 
 
 if __name__ == "__main__":

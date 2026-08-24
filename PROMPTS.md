@@ -1,6 +1,8 @@
 # Import prompts
 
-Use these after installing the `clippy-for-chatgpt` plugin and starting a new Codex task.
+For a command-line-free installation, paste the complete standalone prompt from [INSTALL-PROMPT-EN.txt](INSTALL-PROMPT-EN.txt) or [INSTALL-PROMPT-TR.txt](INSTALL-PROMPT-TR.txt) into a new Codex desktop task. It contains the pinned GitHub URLs, SHA-256 hashes, destination rules, backup behavior, and post-install verification instructions; no plugin must be installed first.
+
+The shorter prompts below require the `clippy-for-chatgpt` plugin to be installed first.
 
 ## English
 

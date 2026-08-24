@@ -17,9 +17,37 @@ An unofficial, fan-made animated Clippy pet package for the Codex desktop app. I
 - SHA-256 verified installers
 - Codex plugin marketplace metadata and an install skill
 
-No external connector plugin, API key, or account integration is required. This repository **is** the plugin marketplace.
+No external connector plugin, API key, or account integration is required.
 
-## Install through Codex plugins
+## One-prompt Codex app install (no command line)
+
+Open a new Codex task and paste the prompt below exactly. The user does not open a terminal or type commands; Codex performs the download, verification, and local installation with its own tools. You may only need to approve Codex's standard network and pet-folder permission requests.
+
+```text
+Install the Clippy pet in the Codex desktop app. Perform the entire operation with your own local file and terminal tools; do not ask me to open the Terminal app or manually run any command.
+
+Use the immutable v1.0.1 GitHub release. Download only these two files:
+
+1. pet.json
+https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
+
+2. spritesheet.webp
+https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
+
+Expected SHA-256 values:
+- pet.json: e18f38295dba206ba9cb69afdd462d472c8e0787ad38dc302bf02c2371c4b88a
+- spritesheet.webp: 96b04a0a1a82060e663a3b17c914630d47f66b6f80dad425a6c0f5c67c642ea5
+
+Download both files into a newly created temporary directory first. If network or filesystem access needs permission, show the normal Codex approval request and continue after approval. If either SHA-256 value does not match exactly, install or change nothing and report the error. Parse pet.json and verify that id is "clippy", spriteVersionNumber is 2, and spritesheetPath is "spritesheet.webp".
+
+The installation destination is pets/clippy inside CODEX_HOME when CODEX_HOME is set; otherwise use $HOME/.codex/pets/clippy on macOS/Linux or .codex\pets\clippy inside the Windows user profile. If the destination already contains both files with the expected hashes, make no changes and report that the installation is ready. If pet.json or spritesheet.webp differs, copy only those existing files into a timestamped clippy-backup-* directory beside the pet directory; do not delete or change other pets, unexpected files, or Codex settings. This prompt explicitly authorizes backing up and replacing those two Clippy files with the verified release.
+
+Install the verified files, recheck both installed SHA-256 values, and report the exact destination, whether a backup was created, and the final verification result. Finally, tell me to relaunch the Codex desktop app if the pet is not visible yet.
+```
+
+The same prompt is available as [INSTALL-PROMPT-EN.txt](INSTALL-PROMPT-EN.txt). Turkish version: [INSTALL-PROMPT-TR.txt](INSTALL-PROMPT-TR.txt).
+
+## Alternative: install through Codex plugins
 
 ```bash
 codex plugin marketplace add eymndev/clippy-for-chatgpt
