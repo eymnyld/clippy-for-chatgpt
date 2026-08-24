@@ -2,7 +2,7 @@
 
 [Türkçe README](README.tr.md)
 
-<p align="left">
+<p align="center">
   <img src="docs/assets/ai-generated-label-black.svg" alt="AI generated" width="240">
 </p>
 

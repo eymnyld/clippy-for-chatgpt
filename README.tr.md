@@ -2,7 +2,7 @@
 
 [English README](README.md)
 
-<p align="left">
+<p align="center">
   <img src="docs/assets/ai-generated-label-black.svg" alt="Yapay zekâ ile üretildi" width="240">
 </p>
 
