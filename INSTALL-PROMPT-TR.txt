@@ -3,10 +3,10 @@ Codex masaüstü uygulamasına Clippy petini kur. İşlemin tamamını kendi yer
 Kaynak, GitHub'daki sabit v1.0.1 sürümüdür. Yalnızca şu iki dosyayı indir:
 
 1. pet.json
-https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
+https://raw.githubusercontent.com/eymnyld/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
 
 2. spritesheet.webp
-https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
+https://raw.githubusercontent.com/eymnyld/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
 
 Beklenen SHA-256 değerleri:
 - pet.json: e18f38295dba206ba9cb69afdd462d472c8e0787ad38dc302bf02c2371c4b88a

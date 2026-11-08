@@ -3,10 +3,10 @@ Install the Clippy pet in the Codex desktop app. Perform the entire operation wi
 Use the immutable v1.0.1 GitHub release. Download only these two files:
 
 1. pet.json
-https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
+https://raw.githubusercontent.com/eymnyld/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
 
 2. spritesheet.webp
-https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
+https://raw.githubusercontent.com/eymnyld/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
 
 Expected SHA-256 values:
 - pet.json: e18f38295dba206ba9cb69afdd462d472c8e0787ad38dc302bf02c2371c4b88a

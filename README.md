@@ -33,10 +33,10 @@ Install the Clippy pet in the Codex desktop app. Perform the entire operation wi
 Use the immutable v1.0.1 GitHub release. Download only these two files:
 
 1. pet.json
-https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
+https://raw.githubusercontent.com/eymnyld/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/pet.json
 
 2. spritesheet.webp
-https://raw.githubusercontent.com/eymndev/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
+https://raw.githubusercontent.com/eymnyld/clippy-for-chatgpt/v1.0.1/plugins/clippy-for-chatgpt/assets/pet/clippy/spritesheet.webp
 
 Expected SHA-256 values:
 - pet.json: e18f38295dba206ba9cb69afdd462d472c8e0787ad38dc302bf02c2371c4b88a
@@ -54,7 +54,7 @@ The same prompt is available as [INSTALL-PROMPT-EN.txt](INSTALL-PROMPT-EN.txt). 
 ## Alternative: install through Codex plugins
 
 ```bash
-codex plugin marketplace add eymndev/clippy-for-chatgpt
+codex plugin marketplace add eymnyld/clippy-for-chatgpt
 codex plugin add clippy-for-chatgpt@clippy-for-chatgpt
 ```
 
@@ -71,7 +71,7 @@ If the pet is not visible immediately, relaunch the Codex desktop app.
 macOS/Linux:
 
 ```bash
-git clone https://github.com/eymndev/clippy-for-chatgpt.git
+git clone https://github.com/eymnyld/clippy-for-chatgpt.git
 cd clippy-for-chatgpt
 ./install.sh
 ```
@@ -79,7 +79,7 @@ cd clippy-for-chatgpt
 Windows PowerShell:
 
 ```powershell
-git clone https://github.com/eymndev/clippy-for-chatgpt.git
+git clone https://github.com/eymnyld/clippy-for-chatgpt.git
 Set-Location clippy-for-chatgpt
 ./install.ps1
 ```
